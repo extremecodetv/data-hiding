@@ -9,7 +9,7 @@ struct Point {
 };
 
 struct Point* createPoint(double x, double y) {
-	struct Point* point = malloc(sizeof(struct Point));
+	struct Point* point = (struct Point*) malloc(sizeof(struct Point)); 
 	point->x = x;
 	point->y = y;
 
